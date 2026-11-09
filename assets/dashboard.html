@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting">Selamat Datang</h1>
+        <p>Silakan pilih menu navigasi di bawah ini:</p>
+        
+        <div class="grid">
+            <a href="stok.html" class="btn">Informasi Stok/Katalog</a>
+            <a href="tracking.html" class="btn">Tracking Pengiriman</a>
+            <a href="checkout.html" class="btn">Laporan Pemesanan</a>
+            <a href="#" class="btn btn-outline" onclick="alert('Menu History Transaksi sedang dalam pengembangan')">History Transaksi</a>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: right;">
+            <a href="login.html" class="btn btn-outline" style="border-color: var(--danger); color: var(--danger);">Logout</a>
+        </div>
+    </div>
+
+    <script src="/assets/js/dashboard.js"></script>
+</body>
+</html>
