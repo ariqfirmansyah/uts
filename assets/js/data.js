@@ -38,7 +38,7 @@ const dataKatalogBuku = [
         edisi: "2",
         stok: 548,
         harga: "Rp 180.000",
-        cover: "/img/pengantar_komunikasi.jpg"
+        cover: "./img/pengantar_komunikasi.jpg"
     },
     {
         kodeBarang: "EKMA4002",
@@ -47,7 +47,7 @@ const dataKatalogBuku = [
         edisi: "3",
         stok: 392,
         harga: "Rp 220.000",
-        cover: "/img/manajemen_keuangan.jpg"
+        cover: "./img/manajemen_keuangan.jpg"
     },
     {
         kodeBarang: "EKMA4310",
@@ -56,7 +56,7 @@ const dataKatalogBuku = [
         edisi: "1",
         stok: 278,
         harga: "Rp 150.000",
-        cover: "/img/kepemimpinan.jpg"
+        cover: "./img/kepemimpinan.jpg"
     },
     {
         kodeBarang: "BIOL4211",
@@ -65,7 +65,7 @@ const dataKatalogBuku = [
         edisi: "2",
         stok: 165,
         harga: "Rp 200.000",
-        cover: "/img/mikrobiologi.jpg"
+        cover: "./img/mikrobiologi.jpg"
     },
     {
         kodeBarang: "PAUD4401",
@@ -74,7 +74,7 @@ const dataKatalogBuku = [
         edisi: "4",
         stok: 204,
         harga: "Rp 250.000",
-        cover: "/img/paud_perkembangan.jpg"
+        cover: "./img/paud_perkembangan.jpg"
     }
 ];
 
