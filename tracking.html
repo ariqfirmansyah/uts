@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracking Pengiriman</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="dashboard.html" class="btn btn-outline" style="margin-bottom: 20px;">&larr; Kembali ke Dashboard</a>
+        <h2>Lacak Pengiriman</h2>
+        
+        <form id="formTracking" class="form-group" style="display: flex; gap: 10px;">
+            <input type="text" id="inputResi" placeholder="Masukkan Nomor DO (contoh: 20230012)" required>
+            <button type="submit" class="btn">Cari Data</button>
+        </form>
+
+        <div id="hasilTracking" style="display: none; background: #2a2a2a; padding: 20px; border-radius: 5px; margin-top: 20px;">
+            <h3 style="color: white; border-bottom: 1px solid var(--primary-color); padding-bottom: 10px;">Detail Pengiriman</h3>
+            <p><strong>Nama Pemesan:</strong> <span id="trackNama"></span></p>
+            <p><strong>Ekspedisi:</strong> <span id="trackEkspedisi"></span></p>
+            <p><strong>Tanggal Kirim:</strong> <span id="trackTanggal"></span></p>
+            <p><strong>Jenis Paket:</strong> <span id="trackPaket"></span></p>
+            <p><strong>Total Bayar:</strong> <span id="trackTotal"></span></p>
+            
+            <h4 style="margin-top: 20px; color: var(--primary-color);">Status Utama: <span id="trackStatusText" style="color: white;"></span></h4>
+            
+            <h4 style="margin-top: 20px; margin-bottom: 10px;">Riwayat Perjalanan Paket:</h4>
+            <ul id="listPerjalanan" style="background: #1e1e1e; padding: 15px 30px; border-radius: 5px; font-size: 14px; line-height: 1.8;">
+                <!-- Diisi oleh JS -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="/assets/js/data.js"></script>
+    <script src="/assets/js/tracking.js"></script>
+</body>
+</html>

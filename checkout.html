@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pemesanan Buku</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="dashboard.html" class="btn btn-outline" style="margin-bottom: 20px;">&larr; Kembali ke Dashboard</a>
+        <h2>Laporan & Checkout Pemesanan</h2>
+        
+        <div style="background: #2a2a2a; padding: 20px; border-radius: 5px;">
+            <h3>Data Pemesan</h3>
+            <div class="form-group"><input type="text" placeholder="Nama Lengkap" required></div>
+            <div class="form-group"><input type="text" placeholder="Alamat Pengiriman Lengkap" required></div>
+            <div class="form-group">
+                <select>
+                    <option>QRIS</option>
+                    <option>Transfer Bank BCA</option>
+                    <option>Transfer Bank Mandiri</option>
+                </select>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 30px;">Daftar Pesanan</h3>
+        <ul id="listPesanan" style="list-style: none; margin-bottom: 20px; background: #2a2a2a; border-radius: 5px; padding: 10px;">
+            <li style="padding: 10px; border-bottom: 1px solid #333;">Pemrograman Web Dasar - Rp 85.000</li>
+        </ul>
+        
+        <div style="display: flex; gap: 10px;">
+            <input type="text" id="itemBaru" placeholder="Ketik nama buku tambahan..." style="flex: 1;">
+            <button type="button" id="btnTambahItem" class="btn btn-outline">Tambah Item</button>
+        </div>
+        
+        <button class="btn" style="width: 100%; margin-top: 30px;" onclick="alert('Pesanan berhasil disimpan. Menunggu approval manual admin.')">Checkout Pesanan Sekarang</button>
+    </div>
+
+    <script src="/assets/js/checkout.js"></script>
+</body>
+</html>

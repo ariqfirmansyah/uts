@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/assets/css/style.css">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Sistem Pemesanan</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container" style="max-width: 400px; margin-top: 10vh;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Login</button>
+        </form>
+        <div style="margin-top: 15px; display: flex; justify-content: space-between;">
+            <button type="button" class="btn btn-outline" id="btnLupaPass">Lupa Password</button>
+            <button type="button" class="btn btn-outline" id="btnDaftar">Daftar</button>
+        </div>
+    </div>
+
+    <!-- Modal Box -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalTitle">Judul</h3>
+            <p id="modalBody">Deskripsi</p>
+        </div>
+    </div>
+
+    <script src="/assets/js/data.js"></script>
+    <script src="/assets/js/login.js"></script>
+</body>
+</html>

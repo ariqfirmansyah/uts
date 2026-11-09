@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Katalog Buku</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="dashboard.html" class="btn btn-outline" style="margin-bottom: 20px;">&larr; Kembali ke Dashboard</a>
+        <h2>Katalog & Stok Buku</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Cover</th>
+                    <th>Kode Barang</th>
+                    <th>Nama Barang</th>
+                    <th>Jenis</th>
+                    <th>Edisi</th>
+                    <th>Stok</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody id="tabelStok">
+                <!-- Data akan dirender oleh JavaScript -->
+            </tbody>
+        </table>
+
+        <h3 style="margin-top: 40px;">Tambah Stok Baru</h3>
+        <form id="formTambahStok">
+            <div class="grid">
+                <input type="text" id="inputKode" placeholder="Kode Barang (Contoh: BUKU01)" required>
+                <input type="text" id="inputNama" placeholder="Nama Barang" required>
+                <input type="text" id="inputJenis" placeholder="Jenis (Contoh: Buku Ajar)" required>
+                <input type="number" id="inputEdisi" placeholder="Edisi" required>
+                <input type="number" id="inputStok" placeholder="Jumlah Stok" required>
+                <input type="text" id="inputHarga" placeholder="Harga (Contoh: Rp 150.000)" required>
+            </div>
+            <button type="submit" class="btn" style="width: 100%; margin-top: 15px;">Tambah ke Tabel</button>
+        </form>
+    </div>
+
+    <script src="/assets/js/data.js"></script>
+    <script src="/assets/js/stok.js"></script>
+</body>
+</html>
